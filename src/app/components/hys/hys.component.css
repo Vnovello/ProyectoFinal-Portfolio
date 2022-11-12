@@ -1,0 +1,6 @@
+.row{
+    background:linear-gradient(to top, rgb(205, 172, 237), rgb(238, 226, 249));
+    color: #260446;
+    padding: 20px;
+    margin-top: none;
+}

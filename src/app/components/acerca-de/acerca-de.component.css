@@ -1,0 +1,40 @@
+.row{
+    padding: 20px;
+
+}
+div{
+    background-color:#a396d5;
+    color:rgb(21, 1, 40); 
+    text-align:center;
+    max-width: max-content;
+    margin-top: 10px;
+}
+/*Estilo de la foto de perfil*/
+#fotoperfil{
+    width:min-content;
+    border-radius: 50%;
+    border-top: 5px;
+    position:-webkit-sticky;
+    box-shadow: 3px,3px,3px rgb(182, 155, 203);
+}
+
+@media (max-width:575px){
+    #fotoperfil{
+        width:min-content;
+        border-radius: 50%;
+        border-top: 5px;
+        position:-webkit-sticky;
+        box-shadow: 3px,3px,3px rgb(182, 155, 203);
+
+    }
+}
+
+
+/*etiqueta nombre*/
+
+#nombre{
+    font-weight: bold;
+    margin-top: 40px;
+    
+}
+/*profesion */

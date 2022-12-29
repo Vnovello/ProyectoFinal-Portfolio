@@ -3,11 +3,11 @@
 
 }
 div{
-    background-color:#a396d5;
-    color:rgb(21, 1, 40); 
+    background:linear-gradient(to top, rgb(4, 0, 7), rgb(9, 0, 17));
+    color:#a396d5; 
     text-align:center;
     max-width: max-content;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 /*Estilo de la foto de perfil*/
 #fotoperfil{

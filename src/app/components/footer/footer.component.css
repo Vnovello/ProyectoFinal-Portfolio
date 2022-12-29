@@ -3,6 +3,7 @@
 }
 
 footer{
+    background:linear-gradient(to top, rgb(31, 2, 53), rgb(9, 0, 17));
     color:rgb(186, 117, 250); 
     font-size: 14px;
     display: flex;

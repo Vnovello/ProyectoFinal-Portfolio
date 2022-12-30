@@ -1,155 +1,52 @@
-
 <div class="row">
-    <h1>Skills</h1>
-    <div class=" text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="80"
-        [radius]="70"
-        [title]="'JAVA'"
-        [backgroundPadding]="7"
-        [backgroundGradient]="false"
-        [backgroundOpacity]="1"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="6"
-        [outerStrokeColor]="'#150128'"
-        [innerStrokeColor]="'#808080'"
-        [showSubtitle]="false"
-        titleColor="#150128"
-        subtitleColor="#a396d5"
-        titleFontSize=20
-        unitsFontSize=10
-        titleFontWeight=normal
-        unitsFontWeight=normal
-        subtitleFontWeight=normal
-        [animation]="true"
-        [animationDuration]="1000"
-      ></circle-progress>
-      
+
+  <h1>Skills</h1>
+  <div class="col-lg-2">
+    <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">
+      <i class="bi bi-plus-lg"></i>
+    </button>
+  </div>
+
+
+
+  <div class=" text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+    <circle-progress 
+    [percent]="(skill.porcentaje)" 
+    [radius]="70" 
+    [title]="(skill.nombre)" 
+    [backgroundPadding]="7"
+    [backgroundGradient]="false" 
+    [backgroundOpacity]="1" 
+    [outerStrokeWidth]="12" 
+    [innerStrokeWidth]="6"
+    [outerStrokeColor]="'#150128'" 
+    [innerStrokeColor]="'#808080'" 
+    [showSubtitle]="false" 
+    titleColor="#150128"
+    subtitleColor="#a396d5" 
+    titleFontSize=20 
+    unitsFontSize=10 
+    titleFontWeight=normal 
+    unitsFontWeight=normal
+    subtitleFontWeight=normal 
+    [animation]="true" 
+    [animationDuration]="1000">
+   </circle-progress>
+
+
+    <div>
+      <td *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+          <i class="bi bi-pencil"></i></button>
+      </td>
+      <td *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(skill.id)">
+          <i class="bi bi-trash"></i></button>
+      </td>
+  
     </div>
-    <div class="  text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="60"
-        [radius]="70"
-        [title]="'CSS'"
-        [backgroundPadding]="7"
-        [backgroundGradient]="false"
-        [backgroundOpacity]="1"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="6"
-        [outerStrokeColor]="'#150128'"
-        [innerStrokeColor]="'#808080'"
-        [showSubtitle]="false"
-        titleColor="#150128"
-        subtitleColor="#a396d5"
-        titleFontSize=20
-        unitsFontSize=10
-        titleFontWeight=normal
-        unitsFontWeight=normal
-        subtitleFontWeight=normal
-        [animation]="true"
-        [animationDuration]="1000"
-      ></circle-progress>
-      
-    </div>
-    <div class=" text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="50"
-        [radius]="70"
-        [title]="'GitHub'"
-        [backgroundPadding]="7"
-        [backgroundGradient]="false"
-        [backgroundOpacity]="1"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="6"
-        [outerStrokeColor]="'#150128'"
-        [innerStrokeColor]="'#808080'"
-        [showSubtitle]="false"
-        titleColor="#150128"
-        subtitleColor="#a396d5"
-        titleFontSize=20
-        unitsFontSize=10
-        titleFontWeight=normal
-        unitsFontWeight=normal
-        subtitleFontWeight=normal
-        [animation]="true"
-        [animationDuration]="1000"
-      ></circle-progress>
-      
-    </div>
-    <div class=" text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="100"
-        [radius]="70"
-        [title]="'English'"
-        [backgroundPadding]="7"
-        [backgroundGradient]="false"
-        [backgroundOpacity]="1"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="6"
-        [outerStrokeColor]="'#150128'"
-        [innerStrokeColor]="'#808080'"
-        [showSubtitle]="false"
-        titleColor="#150128"
-        subtitleColor="#a396d5"
-        titleFontSize=20
-        unitsFontSize=10
-        titleFontWeight=normal
-        unitsFontWeight=normal
-        subtitleFontWeight=normal
-        [animation]="true"
-        [animationDuration]="1000"
-      ></circle-progress>
-      
-    </div>
-    <div class=" text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="65"
-        [radius]="70"
-        [title]="'Angular'"
-        [backgroundPadding]="7"
-        [backgroundGradient]="false"
-        [backgroundOpacity]="1"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="6"
-        [outerStrokeColor]="'#150128'"
-        [innerStrokeColor]="'#808080'"
-        [showSubtitle]="false"
-        titleColor="##150128"
-        subtitleColor="#a396d5"
-        titleFontSize=20
-        unitsFontSize=10
-        titleFontWeight=normal
-        unitsFontWeight=normal
-        subtitleFontWeight=normal
-        [animation]="true"
-        [animationDuration]="1000"
-      ></circle-progress>
-      
-    </div>
-    <div class=" text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="80"
-        [radius]="70"
-        [title]="'HTML'"
-        [backgroundPadding]="7"
-        [backgroundGradient]="false"
-        [backgroundOpacity]="1"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="6"
-        [outerStrokeColor]="'#150128'"
-        [innerStrokeColor]="'#808080'"
-        [showSubtitle]="false"
-        titleColor="#150128"
-        subtitleColor="#a396d5"
-        titleFontSize=20
-        unitsFontSize=10
-        titleFontWeight=normal
-        unitsFontWeight=normal
-        subtitleFontWeight=normal
-        [animation]="true"
-        [animationDuration]="1000"
-      ></circle-progress>
-      
-    </div>
- 
+    
+  </div>
+
+
 </div>

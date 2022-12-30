@@ -1,6 +1,5 @@
 .row{
     padding: 20px;
-    margin-bottom: 10px;
     margin-top: 0px ;
 
 }
@@ -27,4 +26,5 @@ button{
     font-size: 10px;
     color: #926cb5;
     background-color: #150128;
+    
 }

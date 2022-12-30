@@ -2,5 +2,17 @@
     background: rgb(215, 178, 249);
     color: #150128;
     padding: 20px;
-    margin-top: 0px;
+}
+
+.circulo{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    font-size: 10px;
+    color: #926cb5;
+    background-color: #150128;
+    margin-left: 5px;
 }

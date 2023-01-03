@@ -1,0 +1,21 @@
+.container{
+    max-width: -webkit-fill-available;
+   
+}
+.row {
+    background: rgb(212, 187, 235);
+    color: #150128;
+    border-color: rgb(12, 0, 23);
+    box-shadow: rgb(12, 0, 23);
+    padding: 20px;
+    
+}
+
+
+button{
+    font-size: 15px;
+    color: #926cb5;
+    background-color: #150128;
+    margin-top: 10px;
+    width: -webkit-fill-available;
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "frontendmgb": {
+      "hosting": {
+        "ProyectoFinal-Portfolio": [
+          "frontendmgb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "frontendmgb"
+  }
+}

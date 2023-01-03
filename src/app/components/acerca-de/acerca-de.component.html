@@ -1,18 +1,31 @@
-<div class="container">
-    <div class="row">
 
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img src="../../../assets/Logos/Logos/foto perfil dos.jpg" alt="fotoDePerfil" class="img-fluid" id="fotoperfil">
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-            <p id="profesion">Full Stack Developer Jr</p>
-        </div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-            <span>
-                <h1> Acerca de mi </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia odit laboriosam quas, quod aliquid enim exercitationem illo, inventore iusto voluptatem. Placeat exercitationem harum maxime amet asperiores repellendus officiis earum.</p>
-            </span>
+
+
+     <div>
+        <button type="button" class="btn btn-light" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar persona
+        </button>
+     </div>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <img src="{{persona.img}}" alt="fotoDePerfil" class="img-fluid" id="fotoperfil">
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+                <p id="profesion">Full Stack Developer Jr</p>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 descripcion">
+                <span>
+                    <h1> ACERCA DE MI </h1>
+                    <p>{{persona.descripcion}}</p>
+                </span>
+            </div>
         </div>
     </div>
-</div>
+
+        
+
+

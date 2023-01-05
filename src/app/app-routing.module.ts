@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill/new-skill.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'newskill', component: NewSkillComponent },
   { path: 'editskill/:id', component: EditSkillComponent },
   { path: 'editacercade/:id', component: EditAcercaDeComponent },
+  { path : 'nuevapro', component: NewProyectoComponent},
+  { path : 'editpro/:id', component: EditProyectoComponent }
   
 ];
 

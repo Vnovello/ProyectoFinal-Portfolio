@@ -1,26 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,200;0,300;1,300&display=swap');
+
 .container{
 
     max-width: -webkit-fill-available;
-    
+    margin-right: 0px;
 }
 
 .row{
    
-    padding: 20px;
-   
-
+  padding: 20px;
+   margin-right: 0px;
+   font-family: 'Poppins';
+   margin-top: 10px;
 }
+
 div{
     background :black;
     color:antiquewhite; 
     text-align:center;
     max-width: -webkit-fill-available;
-
+    font-family: 'Poppins';
    
 }
 
 h1,h3,h2{
     display: inline;
+    font-family: 'Poppins';
 }
 /*Estilo de la foto de perfil*/
 #fotoperfil{
@@ -47,6 +52,7 @@ h1,h3,h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins';
 }
 /*etiqueta nombre*/
 h1{
@@ -55,8 +61,11 @@ h1{
 #nombre{
     font-weight: bold;
     margin-top: 40px;
+    font-family: 'Poppins';
     
 }
+
+
 
 button{
     font-size: 15px;

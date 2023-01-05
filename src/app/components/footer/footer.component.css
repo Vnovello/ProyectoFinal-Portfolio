@@ -1,13 +1,18 @@
 .row{
-   background: rgb(19, 3, 34); 
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: none;
 }
 
 footer{
-    background:linear-gradient(to top, rgb(31, 2, 53), rgb(9, 0, 17));
-    color:rgb(186, 117, 250); 
+    background:black;
+    color: blue;
     font-size: 14px;
+    font-family: 'Poppins';
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 2px -2px 5px #999;
+    
 }
+
+

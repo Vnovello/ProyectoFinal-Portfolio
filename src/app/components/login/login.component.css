@@ -1,14 +1,15 @@
 .gradient-custom {
 /* fallback for old browsers */
-background: #6a11cb;
+background: #020005;
 
 /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right, rgb(38, 3, 75),rgb(163, 150, 213));
+background: -webkit-linear-gradient(to right, rgb(3, 5, 75),rgb(17, 1, 241));
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right,#6d19f5,#8b62e3);
+background: linear-gradient(to right,rgb(3, 5, 75),rgb(17, 1, 241));
 }
 
 h2{
     color:rgb(220, 184, 254); 
+    font-family: 'Poppins';
 }

@@ -1,8 +1,8 @@
 <div class="row">
 
-  <h1>Skills</h1>
+  <h1>SKILLS</h1>
   <div class="col-lg-2">
-    <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">
+    <button type="button" routerLink="/newskill" class="btn btn-light" *ngIf="isLogged">
       <i class="bi bi-plus-lg"></i>
     </button>
   </div>
@@ -12,17 +12,17 @@
   <div class=" text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
     <circle-progress 
     [percent]="(skill.porcentaje)" 
-    [radius]="70" 
+    [radius]="65" 
     [title]="(skill.nombre)" 
     [backgroundPadding]="7"
     [backgroundGradient]="false" 
     [backgroundOpacity]="1" 
     [outerStrokeWidth]="12" 
     [innerStrokeWidth]="6"
-    [outerStrokeColor]="'#150128'" 
-    [innerStrokeColor]="'#808080'" 
+    [outerStrokeColor]="'#0000ff'" 
+    [innerStrokeColor]="'#ff0000'" 
     [showSubtitle]="false" 
-    titleColor="#150128"
+    titleColor="#faebd7"
     subtitleColor="#a396d5" 
     titleFontSize=20 
     unitsFontSize=10 
@@ -32,7 +32,7 @@
     [animation]="true" 
     [animationDuration]="1000">
    </circle-progress>
-
+   
 
     <div>
       <td *ngIf="isLogged">

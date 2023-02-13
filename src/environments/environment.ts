@@ -12,7 +12,8 @@ export const environment = {
     authDomain: 'frontendmgb.firebaseapp.com',
     messagingSenderId: '223070782103',
   },
-  production: false
+  production: true,
+  URL:'https://backenddiploy-production.up.railway.app/'
 };
 
 /*
